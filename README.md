@@ -12,7 +12,7 @@
 - Familiarização com a estrutura, ciclo de vida e importância dos alertas dentro de um Centro de Operações de Segurança;
 - Exploração de campos de alerta, gerenciamento de status (Aberto, em andamento e fechado) e metodologias de classificação.
 
-## 🛠️ Ferramentas:
+## 🛠️ Ficha Técnica e Contexto Operacional:
 - Plataforma: TryHackMe.
 - Analista: [@Luanainfosec](https://tryhackme.com/p/Luanainfosec).
 - Ambiente: Simulador de Dashboard SOC.
