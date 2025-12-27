@@ -25,7 +25,7 @@ Ao iniciar a operação, foram identificados 5 alertas e 3 estavam pendentes na 
 
 > Simulador de Dashboard SOC.
 
-### 1. Propriedades de Alerta:
+### 📐 1. Propriedades de Alerta:
 
 | Propriedade | Descrição | Exemplo |
 | :---: | :--- | :--- |
@@ -51,11 +51,11 @@ Ao iniciar a operação, foram identificados 5 alertas e 3 estavam pendentes na 
 
 > **Obs:** Threshold = Limite.
 
-## Recomendação:
+## 🏷 Recomendação:
 1. Implementar uma política de Whitelisting para domínios de colaboração conhecidos (Zoom, Teams, Meet);
 2. Ajustar a regra de correlação para considerar o "Tipo de Ativo" (Ex: ignorar picos de tráfego de vídeo em dispositivos de salas de conferência durante o horário comercial).
 
-### Notas de Análise:
+### 📍 Notas de Análise:
 1. Threshold muito baixo: Gera muitos Falsos Positivos (como o caso do Zoom), causando "fadiga de alertas".
 2. Embora o alerta atual tenha sido um Falso Positivo devido ao tráfego legítimo do Zoom, é importante ressaltar que **os atacantes reais podem utilizar a técnica Low and Slow.** Nesses casos, **a exfiltração ocorre em volumes abaixo do threshold** de 5GB para evitar a detecção imediata, exigindo uma análise de comportamento de rede em períodos prolongados.
 
@@ -82,7 +82,7 @@ Ao iniciar a operação, foram identificados 5 alertas e 3 estavam pendentes na 
 > Mark of the Web: O MotW é um recurso de segurança dos sistemas Windows que "carimba" arquivos baixados da internet ou de fontes externas não confiáveis.
       * Exemplo: Se o usuário tentasse abrir esse arquivo, o Windows provavelmente mostraria aquela tela azul do SmartScreen dizendo "O Windows protegeu o seu computador".
 
-### Plano de Resposta:
+### 📝 Plano de Resposta:
 1. **Remediação:** Excluir o arquivo cats2025.mp4.exe e realizar um scan completo de EDR no host LPT-HR-009;
 2. **Bloqueio:** Adicionar o domínio `freecatvideoshd.monster` e o `MD5` no Blacklist do Web Filter e do Antivírus corporativo;
 3. **Educação:** Notificar o usuário S.Conway sobre os riscos de downloads em sites não oficiais.
