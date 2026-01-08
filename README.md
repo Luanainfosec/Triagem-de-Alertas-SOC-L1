@@ -14,7 +14,7 @@
 
 ## 🛠️ Ficha Técnica e Contexto Operacional:
 - Plataforma: TryHackMe.
-- Analista: [@Luanainfosec](https://tryhackme.com/p/Luanainfosec).
+- Analista: [@Luanacyberdef](https://tryhackme.com/p/Luanacyberdef).
 - Ambiente: Simulador de Dashboard SOC.
 - Metodologia: Investigação baseada em evidências e análise de alertas.
 - Sala no TryHackMe: [SOC L1 Alert Triage](https://tryhackme.com/room/socl1alerttriage).
@@ -93,4 +93,4 @@ Ao iniciar a operação, foram identificados 5 alertas e 3 estavam pendentes na 
 
 Por favor, se esse conteúdo te ajudou, não esqueça de compartilhar 😁
 
-[![GitHub Repo stars](https://img.shields.io/badge/share%20on-twitter-03A9F4?logo=twitter)](https://twitter.com/share?url=https://github.com/Luanainfosec/Triagem-de-Alertas-SOC-L1) [![GitHub Repo stars](https://img.shields.io/badge/share%20on-facebook-1976D2?logo=facebook)](https://www.facebook.com/sharer/sharer.php?u=https://github.com/Luanainfosec/Triagem-de-Alertas-SOC-L1) [![GitHub Repo stars](https://img.shields.io/badge/share%20on-linkedin-3949AB?logo=linkedin)](https://www.linkedin.com/shareArticle?url=https://github.com/Luanainfosec/Triagem-de-Alertas-SOC-L1)
+[![GitHub Repo stars](https://img.shields.io/badge/share%20on-twitter-03A9F4?logo=twitter)](https://twitter.com/share?url=https://github.com/Luanacyberdef/Triagem-de-Alertas-SOC-L1) [![GitHub Repo stars](https://img.shields.io/badge/share%20on-facebook-1976D2?logo=facebook)](https://www.facebook.com/sharer/sharer.php?u=https://github.com/Luanacyberdef/Triagem-de-Alertas-SOC-L1) [![GitHub Repo stars](https://img.shields.io/badge/share%20on-linkedin-3949AB?logo=linkedin)](https://www.linkedin.com/shareArticle?url=https://github.com/Luanacyberdef/Triagem-de-Alertas-SOC-L1)
