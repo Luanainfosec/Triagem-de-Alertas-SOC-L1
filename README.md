@@ -99,7 +99,7 @@ Ao iniciar a operação, foram identificados 5 alertas e 3 estavam pendentes na 
 
 ## 📜 Licença
 > [!IMPORTANT]
-> O conteúdo autoral deste repositório está licenciado sob a licença **Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0)**.
+> O conteúdo autoral deste repositório está licenciado sob a licença **Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0)**. <br>
 > Veja: 👉 [LICENSE](./LICENSE.md)
 
 ## 🤖 Uso de IA
