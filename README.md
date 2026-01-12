@@ -42,36 +42,35 @@ Ao iniciar a operação, foram identificados 5 alertas e 3 estavam pendentes na 
 
 ## 🚨 Alerta 1: Potencial de Exfiltração de Dados
 
-### Triagem dos Artefatos
+### Triagem dos Artefatos:
 - **IP de Origem:** 192.168.45.66 (Localização: UK04 / Sala de Reuniões)  
 - **Destino:** .zoom.us  
 - **Volume de Dados:** 5,8 GB Enviados / 5,2 GB Recebidos  
 
-### Análise Técnica
+### Análise Técnica:
 - **Destino:** Domínio Zoom, serviço autorizado e amplamente utilizado. Sem indícios de comunicação com IPs C2 ou domínios maliciosos.  
 - **Contexto:** Tráfego originado de sala de reuniões. Volume compatível com videoconferência em HD de longa duração.  
 
-### Veredito
+### Veredito:
 **Falso Positivo (FP)** — o tráfego legítimo de videoconferência ultrapassou o threshold configurado no SIEM.
 
 
 > **Obs:** Threshold = Limite.
 
-### Recomendações
+### Recomendações:
 - Implementar whitelist para domínios de colaboração (Zoom, Teams, Meet).  
 - Ajustar regras de correlação considerando tipo de ativo (ex.: salas de conferência).  
 
-### Notas de Análise
+### Notas de Análise:
 - Threshold baixo gera muitos Falsos Positivos, aumentando fadiga de alertas.  
 - Técnicas de exfiltração “Low and Slow” podem operar abaixo do threshold, exigindo análise de comportamento em períodos prolongados.  
+- **Low and Slow:** Técnica furtiva usada por atacantes para evitar detecção, transmitindo dados lentamente.
 
-> **Low and Slow:** Técnica furtiva usada por atacantes para evitar detecção, transmitindo dados lentamente.
-
----
+<br>
 
 ## 🚨 Alerta 2: Criação de Arquivos com Dupla Extensão
 
-### Triagem dos Artefatos
+### Triagem dos Artefatos:
 - **Host:** LPT-HR-009 (Laptop do setor de RH)  
 - **Usuário:** S.Conway  
 - **Processo Origem:** chrome.exe  
@@ -79,16 +78,17 @@ Ao iniciar a operação, foram identificados 5 alertas e 3 estavam pendentes na 
 - **URL de Origem (MotW):** `https://freecatvideoshd.monster/cats2025.mp4.exe`  
 - **Hash MD5:** 14d8486f3f63875ef93cfd240c5dc10b  
 
-### Análise Técnica
+### Análise Técnica:
 - **Mascaramento:** Extensão `.mp4.exe` disfarça arquivo executável como vídeo.  
 - **Mark of the Web (MotW):** Indica download de fonte externa, sinalizando risco.  
 - **Vetor de Ataque:** Download via navegador, possivelmente por phishing ou malvertising.  
 
-### Veredito
-**Verdadeiro Positivo (TP)** — arquivo malicioso confirmado por extensão dupla e domínio suspeito
+### Veredito:
+**Verdadeiro Positivo:** Arquivo malicioso confirmado por extensão dupla e domínio suspeito
 
-> Dupla Extensão: cats2025.mp4.exe ---> Tanto o `.MP4` quanto o `.exe`. <br>
-> Mark of the Web: O MotW é um recurso de segurança dos sistemas Windows que "carimba" arquivos baixados da internet ou de fontes externas não confiáveis. <br>
+### Notas de Análise:
+- Dupla Extensão: cats2025.mp4.exe ---> Tanto o `.MP4` quanto o `.exe`.
+- Mark of the Web: O MotW é um recurso de segurança dos sistemas Windows que "carimba" arquivos baixados da internet ou de fontes externas não confiáveis. <br>
       ↪️ Exemplo: Se o usuário tentasse abrir esse arquivo, o Windows provavelmente mostraria aquela tela azul do SmartScreen dizendo "O Windows protegeu o seu computador".
 
 ### 📝 Plano de Resposta:
@@ -106,7 +106,7 @@ Ao iniciar a operação, foram identificados 5 alertas e 3 estavam pendentes na 
 
 ---
 
-<h2> 🔗 Compartilhe com a comunidade 🧡 </h2>
+## 🔗 Compartilhe com a comunidade 🧡
 
 Por favor, se esse conteúdo te ajudou, não esqueça de compartilhar 😁
 
