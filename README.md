@@ -62,7 +62,7 @@ Ao iniciar a operação, foram identificados 5 alertas e 3 estavam pendentes na 
 - Ajustar regras de correlação considerando tipo de ativo (ex.: salas de conferência).  
 
 <details>
-<summary>📝 Notas de Análise</summary>
+<summary>📝 Notas de Análise: Clique aqui </summary>
 
 - Threshold baixo gera muitos Falsos Positivos, aumentando fadiga de alertas.  
 - Técnicas de exfiltração “Low and Slow” podem operar abaixo do threshold, exigindo análise de comportamento em períodos prolongados.  
